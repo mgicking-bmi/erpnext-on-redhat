@@ -1,0 +1,3 @@
+FROM frappe/erpnext:v15.82.1
+VOLUME ["/home/frappe/frappe-bench/sites", "/home/frappe/frappe-bench/logs"]
+CMD ["bench", "schedule"]

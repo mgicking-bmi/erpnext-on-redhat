@@ -1,0 +1,6 @@
+FROM frappe/erpnext:v15.82.1
+ENV DB_HOST=db \
+    DB_PORT=3306 \
+    MYSQL_ROOT_PASSWORD=admin \
+    MARIADB_ROOT_PASSWORD=admin
+VOLUME ["/home/frappe/frappe-bench/sites", "/home/frappe/frappe-bench/logs"]

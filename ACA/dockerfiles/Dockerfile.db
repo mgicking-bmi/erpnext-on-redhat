@@ -1,0 +1,8 @@
+FROM mariadb:10.6
+ENV MYSQL_ROOT_PASSWORD=admin \
+    MARIADB_ROOT_PASSWORD=admin
+VOLUME ["/var/lib/mysql"]
+CMD ["--character-set-server=utf8mb4", \
+     "--collation-server=utf8mb4_unicode_ci", \
+     "--skip-character-set-client-handshake", \
+     "--skip-innodb-read-only-compressed"]
